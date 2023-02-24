@@ -91,7 +91,7 @@
     padding: 0px 10%;
     text-align: center;
 }
-.products h2, .clients h2{
+.products h2, .clients h2 , .contact-us h2{
     margin: 40px auto 30px auto;
     text-align: center;
     font-size: calc(1.5rem + 1.4vw);
@@ -128,4 +128,47 @@
 }
 .clients .product-container div img{
     width: 100%;
+}
+
+/*SECTION CONTACT US*/
+.contact-us{
+    background-color: var(--grey);
+
+}
+.contact-us .container{
+    display: flex;
+    justify-content: space-around;
+}
+.contact-us .container div{
+    flex-basis: 30%;
+    text-align: center;
+    color: white;
+}
+.contact-us .container div i{
+    font-size: 32px;
+    color: var(--orange);
+    margin: 20px 0px;
+}
+.contact-us .container div p{
+    font-size: 14px;
+}
+.contact-us .container div .contact-name span{
+    font-size: 10px;
+}
+.contact-us .container .social-icons a{
+    text-decoration: none;
+    color: white;
+    font-size: 42px;
+    margin: 20px 10px;
+    transition: 0.3s;
+}
+.contact-us .container .social-icons a i:hover{
+    color: white !important;
+}
+
+@media only screen and (max-width: 576px) {
+
+    .contact-us .container{
+        flex-direction: column;
+    }
 }
