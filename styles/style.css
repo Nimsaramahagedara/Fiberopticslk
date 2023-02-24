@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --orange : #f57224 ;
+    --grey : #353535;
+   /* font-family: 'Italiana', serif;*/
+    font-family: 'Poppins', sans-serif;
+}
+.logo{
+    text-align: center;
+}
+.logo img{
+    width: 150px;
+    margin: 10px auto;
+}
+.navbar-nav .nav-link:hover{
+    color: var(--orange) !important;
+}
+
+/*Main Banner*/
+
+.main{
+    margin: 10px 0px;
+    background-color: var(--grey);
+    padding: 0 10%;
+    height: 75vh;
+}
+.main-banner{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.main-banner div{
+    min-width: 440px;
+    flex-basis: 50%;
+}
+.main-banner .banner-box{
+    padding: 50px 10px;
+    line-height: 40px;
+}
+.main-banner div h1{
+    color: white;
+    font-family: 'Italiana', serif;
+    font-size: calc(2.1rem + 1.5vw);
+}
+.main-banner div h1 span{
+    color: var(--orange);
+    
+}
+.main-banner div p{
+    margin: 20px 0px;
+    font-size: 18px;
+    color: grey;
+}
+.main-banner .banner-image{
+    min-height: 300px;
+    background-image: url(../images/girl.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media only screen and (max-width: 1100px) {
+    .main{
+        height: unset;
+    }
+    .main-banner div{
+        min-width: 0px;
+        align-items: center;
+        flex-basis: 100%;
+    }
+}
+/*MOBILE VIEW*/
+@media only screen and (max-width: 576px) {
+    .main{
+        padding: 0 4%;
+    }
+    .main-banner .banner-box{
+        padding: 20px 0px;
+        line-height: unset;
+    }
+    .main-banner div p{
+        font-size: 14px;
+    }
+}
+
+/*SECTION 02*/
+
+.products, .clients{ 
+    padding: 0px 10%;
+    text-align: center;
+}
+.products h2, .clients h2{
+    margin: 40px auto 30px auto;
+    text-align: center;
+    font-size: calc(1.5rem + 1.4vw);
+    color: var(--grey);
+    font-family: 'Italiana', serif;
+}
+.products .product-container, .clients .product-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.products .product-container div{
+    flex-basis: 25%;
+}
+.products .product-container div img{
+    width: 100%;
+}
+.btn-light{
+    margin: 30px 0px;
+    border: 1px solid var(--grey) !important;
+}
+
+/*MOBILE VIEW*/
+@media only screen and (max-width: 576px) {
+
+    .products .product-container div{
+        flex-basis: 50%;
+    }
+}
+
+/*SECTION 03 CLIENTS*/
+.clients .product-container div{
+    flex-basis: 15%;
+}
+.clients .product-container div img{
+    width: 100%;
+}
